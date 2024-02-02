@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Portfolio Website | CodingLab</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+
+  <nav id="nav-menu">
+    <div class="navbar">
+      <div class="logo"><a href="#">Portfolio.</a></div>
+      <ul class="menu">
+        <li><a href="#home" class="nav-link home-section">Home</a></li>
+        <li><a href="#about" class="nav-link about-section">About</a></li>
+        <li><a href="#skills" class="nav-link skills-section">Skills</a></li>
+        <li><a href="#projects" class="nav-link projects-section">Projects</a></li>
+        <li><a href="#contact" class="nav-link contact-section">Contact</a></li>
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+      </ul>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="home-content">
+      <div class="text">
+        <div class="text-one">Hello,</div>
+        <div class="text-two">I'm ANIKET KUMAR <br>BAGHEL</div>
+        <div class="text-three">NODE JS BACKEND DEVELOPER</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="images/newprofilepic.jpg" alt="" class="home-img">
+        </div>
+        <div class="right">
+          <div class="topic">Developing Is My Passion</div>
+          <p>Ambitious Node.js backend developer with a knack for crafting innovative solutions. Proficient in MongoDB, Express.js, and JavaScript. Proven ability in executing solo and collaborative projects. Eager to embrace new technologies and contribute to dynamic development environments, demonstrating adaptability and a commitment to excellence.</p>
+          <div class="button">
+            <button id="resume-button-1" onclick="window.open('https://drive.google.com/file/d/1ddFUlhthSV9ZkLOb5wOAhigLs66eCjXg/view?usp=drive_link')">Download CV</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="content">
+      <div class="title"><span>My Skills</span></div>
+      <div class="skill-cards">
+        <div class="card">
+          <span class="iconify logo" data-icon="skill-icons:html" data-inline="false" data-width="100px" data-height="100px"></span>
+        </div>
+        <div class="card">
+          <span class="iconify logo" data-icon="skill-icons:css" data-inline="false" data-width="100px" data-height="100px"></span>
+        </div>
+        <div class="card">
+          <span class="iconify logo" data-icon="logos:javascript" data-inline="false" data-width="100px" data-height="100px"></span>
+        </div>
+        <!-- Repeat the above structure for each set of three icons -->
+        <!-- Second Set of Three -->
+        <div class="card">
+          <span class="iconify logo" data-icon="devicon:nodejs-wordmark" data-inline="false" data-width="100px" data-height="100px"></span>
+        </div>
+        <div class="card">
+          <span class="iconify logo" data-icon="skill-icons:expressjs-light" data-inline="false" data-width="100px" data-height="100px"></span>
+        </div>
+        <div class="card">
+          <span class="iconify logo" data-icon="devicon:mongodb-wordmark" data-inline="false" data-width="100px" data-height="100px"></span>
+        </div>
+        <!-- Third Set of Three -->
+        <div class="card">
+          <span class="iconify logo" data-icon="devicon-plain:mysql-wordmark" data-inline="false" data-width="100px" data-height="100px"></span>
+        </div>
+        <div class="card">
+          <span class="iconify logo" data-icon="skill-icons:java-light" data-inline="false" data-width="100px" data-height="100px"></span>
+        </div>
+        <div class="card">
+          <span class="iconify logo" data-icon="skill-icons:postman" data-inline="false" data-width="100px" data-height="100px"></span>
+        </div>
+        <!-- Fourth Set of Three -->
+        <div class="card">
+          <span class="iconify logo" data-icon="devicon:bootstrap" data-inline="false" data-width="100px" data-height="100px"></span>
+        </div>
+  
+        <div class="card">
+          <span class="iconify logo" data-icon="devicon:redis-wordmark" data-inline="false" data-width="100px" data-height="100px"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project" id="projects">
+    <div class="content">
+      <div class="title"><span>My Projects</span></div>
+      <div class="project-card">
+        <div class="project-content">
+          <div class="topic">
+            <img src="./Images/coinSquare.png" alt="CoinSquare Image">
+          </div>
+          <div class="project-details">
+            <h2>CoinSquare</h2>
+            <p>CoinSquare is an innovative online cryptocurrency trading application, providing users with a seamless trading experience. The platform offers user registration, authentication, and real-time updates on cryptocurrency prices based on market conditions. It features dynamic graphs, a user dashboard, and facilitates buy and sell transactions.</p>
+            <div class="buttons">
+              <a href="https://github.com/SreeHarsha-Kamisetty/web-warrior-8765" target="_blank" rel="noopener noreferrer">
+                <button class="iconify logo" data-icon="fa-brands:github" data-inline="false" data-width="50px" data-height="50px" style="color: rgb(33, 33, 33);"></button>
+            </a>
+            <a href="https://coinsquare-web-warrior.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <button class="iconify logo" data-icon="fluent-mdl2:web-environment" data-inline="false" data-width="50px" data-height="50px" style="color: rgb(33, 33, 33);"></button>
+          </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Project Card 2 (Add more similar cards for additional projects) -->
+      <div class="project-card">
+        <div class="project-content">
+          <div class="topic">
+            <img src="./Images/travelo.png" alt="Project 2 Image">
+          </div>
+          <div class="project-details">
+            <h2>Travelo</h2>
+            <p>Embark on thrilling adventures with our dynamic travel website. Specializing in trekking, river rafting, and skydiving, our platform offers seamless booking and customizable packages. Explore safety details and a dynamic event calendar for an unforgettable journey. Experience innovation and user-centric design at its best.</p>
+            <div class="buttons">
+              <a href="https://github.com/Vinay-the-dev-bot/byte-harmony-2098" target="_blank" rel="noopener noreferrer">
+                <button class="iconify logo" data-icon="fa-brands:github" data-inline="false" data-width="50px" data-height="50px" style="color: rgb(33, 33, 33);"></button>
+            </a>
+            <a href="https://byte-harmony-2098.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <button class="iconify logo" data-icon="fluent-mdl2:web-environment" data-inline="false" data-width="50px" data-height="50px" style="color: rgb(33, 33, 33);"></button>
+          </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="git-stats">
+    <div class="content">
+      <div class="title"><span>Git-stats</span></div>
+      <div class="git-div">
+        <div>
+          <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=aniketbaghel1601&show_icons=true" />
+        </div>
+        <div>
+          <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs?username=aniketbaghel1601&show_icons=true" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Contact Me</span></div>
+      <div id="user-detail-name" class="contact-card">
+        <h3>Mobile Number</h3>
+        <p>+91-6307556154</p>
+      </div>
+      <div id="user-detail-intro" class="contact-card">
+        <h3>Location</h3>
+        <p>Siddharth Nagar, Uttar Pradesh, India</p>
+      </div>
+      <div id="contact-email" class="contact-card">
+        <h3>Email</h3>
+        <p>aniket357baghel@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</body>
+</html>
