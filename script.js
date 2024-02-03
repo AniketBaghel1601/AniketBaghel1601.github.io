@@ -61,7 +61,7 @@ function downloadingPdf(){
   downloadPdf.target = "_blank";
   document.body.appendChild(downloadPdf);
   downloadPdf.click();
-  if (downloadLink.parentNode) {
-    document.body.removeChild(downloadPdf);
-}
+//   if (downloadLink.parentNode) {
+//     document.body.removeChild(downloadPdf);
+// }
 }
