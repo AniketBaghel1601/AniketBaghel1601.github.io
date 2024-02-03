@@ -45,32 +45,20 @@ for (var i = 0; i < navLinks.length; i++) {
 }
 
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const resumeLink = document.getElementsByClassName('resume')[0];
-
-    if (resumeLink) {
-      resumeLink.addEventListener('click', function (event) {
-        // Prevent the default behavior of the link (e.g., scrolling to the anchor)
-        event.preventDefault();
-
-        // Replace this URL with your actual Google Drive link
+  function downloadPdf() {
         const driveLink = 'https://drive.google.com/file/d/1ddFUlhthSV9ZkLOb5wOAhigLs66eCjXg/view?usp=drive_link';
-
-        // Open the link in a new tab/window
         window.open(driveLink, '_blank');
-      });
-    }
-  });
+  }
 
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const downloadButton = document.getElementById('resume-button-1');
-    downloadButton.addEventListener('click', function () {
-      const resumePdfUrl = 'https://drive.google.com/file/d/1ddFUlhthSV9ZkLOb5wOAhigLs66eCjXg/view?usp=drive_link';
-      const tempAnchor = document.createElement('a');
-      tempAnchor.href = resumePdfUrl;
-      tempAnchor.setAttribute('download', 'Aniket_Baghel_Resume.pdf');
-      tempAnchor.click();
-      document.body.removeChild(tempAnchor);
-    });
-  });
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   const downloadButton = document.getElementById('resume-button-2');
+  //   downloadButton.addEventListener('click', function () {
+  //     const resumePdfUrl = 'https://drive.google.com/file/d/1ddFUlhthSV9ZkLOb5wOAhigLs66eCjXg/view?usp=drive_link';
+  //     const tempAnchor = document.createElement('a');
+  //     tempAnchor.href = resumePdfUrl;
+  //     tempAnchor.setAttribute('download', 'Aniket_Baghel_Resume.pdf');
+  //     tempAnchor.click();
+  //     document.body.removeChild(tempAnchor);
+  //   });
+  // });
