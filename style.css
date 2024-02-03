@@ -301,6 +301,10 @@ section .button button:hover{
   transition: transform 0.3s ease-in-out;
 }
 
+.skills-card-name{
+  margin-top: 5px;
+  color: #2f2f2f;
+}
 
 .skills-card:nth-child(4n) {
   margin-right: 0;
