@@ -62,3 +62,15 @@ for (var i = 0; i < navLinks.length; i++) {
     }
   });
 
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const downloadButton = document.getElementById('resume-button-1');
+    downloadButton.addEventListener('click', function () {
+      const resumePdfUrl = 'https://drive.google.com/file/d/1ddFUlhthSV9ZkLOb5wOAhigLs66eCjXg/view?usp=drive_link';
+      const tempAnchor = document.createElement('a');
+      tempAnchor.href = resumePdfUrl;
+      tempAnchor.setAttribute('download', 'Aniket_Baghel_Resume.pdf');
+      tempAnchor.click();
+      document.body.removeChild(tempAnchor);
+    });
+  });

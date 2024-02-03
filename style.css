@@ -262,12 +262,12 @@ section .button button:hover{
   justify-content: space-around;
   margin-top: 20px;
 }
-.skill-card:hover {
+.skills-card:hover {
   transform: scale(1.1); /* Increase size on hover */
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
 }
 
-.skill-card {
+.skills-card {
   border: 1px solid #ccc;
   padding: 10px;
   margin: 10px;
@@ -280,12 +280,12 @@ section .button button:hover{
 }
 
 
-.skill-card:nth-child(4n) {
+.skills-card:nth-child(4n) {
   margin-right: 0;
 }
 
 
-.skill-card:not(:nth-child(4n)) {
+.skills-card:not(:nth-child(4n)) {
   margin-right: 10px;
 }
 
