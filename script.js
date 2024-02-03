@@ -45,20 +45,21 @@ for (var i = 0; i < navLinks.length; i++) {
 }
 
 
-  function downloadPdf() {
-        const driveLink = 'https://drive.google.com/file/d/1ddFUlhthSV9ZkLOb5wOAhigLs66eCjXg/view?usp=drive_link';
-        window.open(driveLink, '_blank');
-  }
+document.getElementById("resume-button-1").addEventListener('click',()=>{
+  downloadingPdf();
+})
 
+document.getElementById('resume-button-2').addEventListener('click',()=>{
+  downloadingPdf();
+})
 
-  // document.addEventListener('DOMContentLoaded', function () {
-  //   const downloadButton = document.getElementById('resume-button-2');
-  //   downloadButton.addEventListener('click', function () {
-  //     const resumePdfUrl = 'https://drive.google.com/file/d/1ddFUlhthSV9ZkLOb5wOAhigLs66eCjXg/view?usp=drive_link';
-  //     const tempAnchor = document.createElement('a');
-  //     tempAnchor.href = resumePdfUrl;
-  //     tempAnchor.setAttribute('download', 'Aniket_Baghel_Resume.pdf');
-  //     tempAnchor.click();
-  //     document.body.removeChild(tempAnchor);
-  //   });
-  // });
+function downloadingPdf(){
+  const fileId = "1ddFUlhthSV9ZkLOb5wOAhigLs66eCjXg"
+  const downloadPdf = document.createElement('a');
+  downloadPdf.href = `https://drive.google.com/uc?export=download&id=${fileId}`
+  downloadPdf.setAttribute('download','Aniket_resume.pdf');
+  downloadPdf.target = "_blank";
+  document.body.appendChild(downloadPdf);
+  downloadPdf.click();
+  document.removeChild(downloadPdf);
+}
