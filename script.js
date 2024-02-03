@@ -18,7 +18,7 @@ window.onscroll = function() {
 let body = document.querySelector("body");
 let navBar = document.querySelector(".navbar");
 let menuBtn = document.querySelector(".menu-btn");
-let cancelBtn = document.querySelector(".cancel-btn");
+let cancelBtn = document.querySelector(".cancel-btn")
 menuBtn.onclick = function(){
   navBar.classList.add("active");
   menuBtn.style.opacity = "0";
@@ -43,3 +43,22 @@ for (var i = 0; i < navLinks.length; i++) {
     menuBtn.style.pointerEvents = "auto";
   });
 }
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const resumeLink = document.getElementsByClassName('resume')[0];
+
+    if (resumeLink) {
+      resumeLink.addEventListener('click', function (event) {
+        // Prevent the default behavior of the link (e.g., scrolling to the anchor)
+        event.preventDefault();
+
+        // Replace this URL with your actual Google Drive link
+        const driveLink = 'https://drive.google.com/file/d/1ddFUlhthSV9ZkLOb5wOAhigLs66eCjXg/view?usp=drive_link';
+
+        // Open the link in a new tab/window
+        window.open(driveLink, '_blank');
+      });
+    }
+  });
+

@@ -262,12 +262,12 @@ section .button button:hover{
   justify-content: space-around;
   margin-top: 20px;
 }
-.card:hover {
+.skill-card:hover {
   transform: scale(1.1); /* Increase size on hover */
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
 }
 
-.card {
+.skill-card {
   border: 1px solid #ccc;
   padding: 10px;
   margin: 10px;
@@ -276,16 +276,16 @@ section .button button:hover{
   box-sizing: border-box;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 
-.card:nth-child(4n) {
+.skill-card:nth-child(4n) {
   margin-right: 0;
 }
 
 
-.card:not(:nth-child(4n)) {
+.skill-card:not(:nth-child(4n)) {
   margin-right: 10px;
 }
 
@@ -296,7 +296,7 @@ section .button button:hover{
   margin: 20px 0;
   margin-bottom: 10%;
   text-align: center;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.13s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;;
 }
 .project-card:hover {
@@ -379,11 +379,6 @@ footer .text span a:hover{
 
 /* contact section */
 
-.contact {
-  background-color: #f4f4f4;
-  padding: 50px 0;
-}
-
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -417,7 +412,12 @@ footer .text span a:hover{
   margin-top: 10px;
 }
 
-
+.contact-links{
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  padding-bottom: 2%;
+}
 
 
 
