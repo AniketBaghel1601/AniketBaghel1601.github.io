@@ -65,3 +65,13 @@ function downloadingPdf(){
 //     document.body.removeChild(downloadPdf);
 // }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+var typed = new Typed(".typing", {
+  strings: ["NODE JS BACKEND DEVELOPER","BACKEND ENGINEER"],
+  typeSpeed: 70,
+  backSpeed: 40,
+  loop: true,
+});
+})

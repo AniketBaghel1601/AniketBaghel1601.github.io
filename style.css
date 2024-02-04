@@ -72,7 +72,8 @@ nav .navbar .menu li{
   transition: all 0.4s ease;
 }
 .navbar .menu a:hover{
-  color: #181818;
+  color: #9a9a9a;
+  text-decoration: underline;
 }
 nav.sticky .menu a{
   color: #FFF;
@@ -357,6 +358,10 @@ section .button button:hover{
   gap: 15px;
 }
 
+.git-calender{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 
 .buttons{
