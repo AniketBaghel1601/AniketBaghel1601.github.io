@@ -668,10 +668,11 @@ footer .text span a:hover{
       position: fixed;
       left: -100%;
       top: 0;
-      background: #0E2431;
+      background: #000000;
       height: 100vh;
       max-width: 400px;
       width: 100%;
+      margin-left: 0;
       padding-top: 60px;
       flex-direction: column;
       align-items: center;
@@ -708,6 +709,20 @@ footer .text span a:hover{
       display: none;
     }
 
+    .project-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5%;
+      height: 30%;
+    }
+    
+    .buttons {
+      margin-top: 10px;
+      display: flex;
+      gap: 10%;
+      margin-left: 38%;
+    }
 
   }
 
@@ -721,6 +736,21 @@ footer .text span a:hover{
     body{
       overflow: hidden;
     }
+
+    .project-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5%;
+      height: 30%;
+    }
+    
+    .buttons {
+      margin-top: 10px;
+      display: flex;
+      gap: 10%;
+      margin-left: 27%;
+    }
   }
 .image12{
   width: 100%;
@@ -733,7 +763,8 @@ footer .text span a:hover{
     position: fixed;
     left: -105%;
     top: 0;
-    background: #0E2431;
+    margin-left: 0;
+    background: #000000;
     height: 100vh;
     max-width: 400px;
     padding-top: 60px;
@@ -761,6 +792,22 @@ footer .text span a:hover{
   position: absolute;
   top: 90px;
 }
+
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5%;
+  height: 30%;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10%;
+  margin-left: 27%;
+}
 }
 
 
@@ -769,9 +816,10 @@ footer .text span a:hover{
     position: fixed;
     left: -105%;
     top: 0;
-    background: #0E2431;
+    background: #000000;
     height: 100vh;
     max-width: 400px;
+    margin-left: 0;
     width: 100%;
     padding-top: 60px;
     flex-direction: column;
@@ -799,6 +847,21 @@ footer .text span a:hover{
   top: 90px;
 }
 
+.project-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5%;
+  height: 30%;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10%;
+  margin-left: 27%;
+}
+
 }
 
 @media only screen and (max-width:1022px){
@@ -812,4 +875,5 @@ footer .text span a:hover{
   .scroll-button{
     padding-left: 10px;
   }
+
 }
