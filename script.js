@@ -23,7 +23,7 @@ menuBtn.onclick = function(){
   navBar.classList.add("active");
   menuBtn.style.opacity = "0";
   menuBtn.style.pointerEvents = "none";
-  body.style.overflow = "hidden";
+  // body.style.overflow = "hidden";
   scrollBtn.style.pointerEvents = "none";
 }
 cancelBtn.onclick = function(){
@@ -41,6 +41,7 @@ for (var i = 0; i < navLinks.length; i++) {
     navBar.classList.remove("active");
     menuBtn.style.opacity = "1";
     menuBtn.style.pointerEvents = "auto";
+    body.style.scrollBehavior = "smooth";
   });
 }
 
@@ -69,9 +70,13 @@ function downloadingPdf(){
 document.addEventListener('DOMContentLoaded', function() {
   
 var typed = new Typed(".typing", {
-  strings: ["NODE JS BACKEND DEVELOPER","BACKEND ENGINEER"],
+  strings: ["NODE JS BACKEND <br>DEVELOPER","BACKEND ENGINEER"],
   typeSpeed: 70,
   backSpeed: 40,
   loop: true,
 });
 })
+
+
+// hamburger smooth scrolling
+
