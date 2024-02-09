@@ -19,6 +19,7 @@ let body = document.querySelector("body");
 let navBar = document.querySelector(".navbar");
 let menuBtn = document.querySelector(".menu-btn");
 let cancelBtn = document.querySelector(".cancel-btn")
+let resumeButton = document.getElementById("resume-button-1")
 menuBtn.onclick = function(){
   navBar.classList.add("active");
   menuBtn.style.opacity = "0";
@@ -45,26 +46,26 @@ for (var i = 0; i < navLinks.length; i++) {
 }
 
 
-document.getElementById("resume-button-1").addEventListener('click',()=>{
-  downloadingPdf();
-})
+// document.getElementById("resume-button-1").addEventListener('click',()=>{
+//   downloadingPdf();
+// })
 
-document.getElementById('resume-button-2').addEventListener('click',()=>{
-  downloadingPdf();
-})
+// document.getElementById('resume-button-2').addEventListener('click',()=>{
+//   downloadingPdf();
+// })
 
-function downloadingPdf(){
-  const fileId = "1ddFUlhthSV9ZkLOb5wOAhigLs66eCjXg"
-  const downloadPdf = document.createElement('a');
-  downloadPdf.href = `https://drive.google.com/uc?export=download&id=${fileId}`
-  downloadPdf.setAttribute('download','Aniket_resume.pdf');
-  downloadPdf.target = "_blank";
-  document.body.appendChild(downloadPdf);
-  downloadPdf.click();
-//   if (downloadLink.parentNode) {
-//     document.body.removeChild(downloadPdf);
+// function downloadingPdf(){
+//   const fileId = "1ddFUlhthSV9ZkLOb5wOAhigLs66eCjXg"
+//   const downloadPdf = document.createElement('a');
+//   downloadPdf.href = `https://drive.google.com/uc?export=download&id=${fileId}`
+//   downloadPdf.setAttribute('download','Aniket_resume.pdf');
+//   downloadPdf.target = "_blank";
+//   document.body.appendChild(downloadPdf);
+//   downloadPdf.click();
+// //   if (downloadLink.parentNode) {
+// //     document.body.removeChild(downloadPdf);
+// // }
 // }
-}
 
 document.addEventListener('DOMContentLoaded', function() {
   
