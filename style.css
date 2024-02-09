@@ -142,7 +142,7 @@ nav .menu-btn {
 #home{
   height: 100vh;
   width: 100%;
-  background: url("./Images/andras-vas-Bd7gNnWJBkU-unsplash.jpg") no-repeat;
+  background: url("./Images/andras-vas-Bd7gNnWJBkU-unsplash.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -481,6 +481,8 @@ footer .text span a:hover{
     height: 350px;
     width: 350px;
   }
+
+
 }
 
 
@@ -514,12 +516,34 @@ footer .text span a:hover{
     align-items: center;
     margin: auto;
   }
+
+  .navbar .menu a:hover{
+    color: #9a9a9a;
+    text-decoration: underline;
+  }
+  nav.sticky .menu a{
+    color: #FFF;
+  }
+  nav.sticky .menu a:hover{
+    color: #0E2431;
+  }
 }
 
 @media screen and (max-width: 1207px) {
   nav .navbar{
     width: 100%;
     padding-left: 2%;
+  }
+
+  .navbar .menu a:hover{
+    color: #9a9a9a;
+    text-decoration: underline;
+  }
+  nav.sticky .menu a{
+    color: #FFF;
+  }
+  nav.sticky .menu a:hover{
+    color: #0E2431;
   }
 }
 
@@ -534,6 +558,17 @@ footer .text span a:hover{
     gap: 5%;
     margin-left: 2%;
   }
+
+  .navbar .menu a:hover{
+    color: #9a9a9a;
+    text-decoration: underline;
+  }
+  nav.sticky .menu a{
+    color: #FFF;
+  }
+  nav.sticky .menu a:hover{
+    color: #0E2431;
+  }
 }
 
 
@@ -543,6 +578,17 @@ footer .text span a:hover{
     display: flex;
     gap: 5%;
     margin-bottom: 40px 
+  }
+
+  .navbar .menu a:hover{
+    color: #9a9a9a;
+    text-decoration: underline;
+  }
+  nav.sticky .menu a{
+    color: #FFF;
+  }
+  nav.sticky .menu a:hover{
+    color: #0E2431;
   }
 }
 
@@ -565,12 +611,65 @@ footer .text span a:hover{
     nav .navbar .menu .nav-link{
       font-size: 17px;
     }
+
+    .navbar .menu a:hover{
+      color: #9a9a9a;
+      text-decoration: underline;
+    }
+    nav.sticky .menu a{
+      color: #FFF;
+    }
+    nav.sticky .menu a:hover{
+      color: #0E2431;
+    }
   }
 
   @media screen and (max-width : 1072px) {
     nav .navbar .logo {
       font-size: 27px;
     }
+
+    .nav-link{
+      display: none;
+      /* pointer-events: none; */
+    }
+
+    nav .navbar .menu{
+      position: fixed;
+      left: -100%;
+      top: 0;
+      background: #000000;
+      height: 100vh;
+      max-width: 400px;
+      width: 100%;
+      margin-left: 0;
+      padding-top: 60px;
+      flex-direction: column;
+      align-items: center;
+      transition: all 0.5s ease;
+    }
+
+    nav .navbar .menu a{
+      font-size: 23px;
+      display: block;
+      color: #fff;
+      margin: 10px 0;
+    }
+
+    .navbar.active .menu{
+      left: 0;
+    }
+
+    nav .menu-btn,
+    .navbar .menu .cancel-btn{
+      display: block;
+    }
+
+    #resume-button-1{
+      display: none;
+    }
+
+
   }
 
   @media screen and (max-width : 953px) {
@@ -590,7 +689,48 @@ footer .text span a:hover{
     }
   }
 
-  @media screen and (max-width : 903px){
+  @media screen and (max-width : 900px){ 
+
+    .nav-link{
+      display: none;
+      /* pointer-events: none; */
+    }
+
+    nav .navbar .menu{
+      position: fixed;
+      left: -100%;
+      top: 0;
+      background: #000000;
+      height: 100vh;
+      max-width: 400px;
+      width: 100%;
+      margin-left: 0;
+      padding-top: 60px;
+      flex-direction: column;
+      align-items: center;
+      transition: all 0.5s ease;
+    }
+
+    nav .navbar .menu a{
+      font-size: 23px;
+      display: block;
+      color: #fff;
+      margin: 10px 0;
+    }
+
+    .navbar.active .menu{
+      left: 0;
+    }
+
+    nav .menu-btn,
+    .navbar .menu .cancel-btn{
+      display: block;
+    }
+
+    #resume-button-1{
+      display: none;
+    }
+
     nav .navbar .logo {
       font-size: 25px;
     }
@@ -831,6 +971,10 @@ footer .text span a:hover{
 
 @media only screen and (max-width:376px){
 
+  .project-description{
+    font-size: 12px;
+  }
+
   .nav-link{
     display: none;
     pointer-events: none;
@@ -907,3 +1051,5 @@ footer .text span a:hover{
   }
 
 }
+
+

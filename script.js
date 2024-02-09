@@ -76,6 +76,3 @@ var typed = new Typed(".typing", {
 });
 })
 
-
-// hamburger smooth scrolling
-
