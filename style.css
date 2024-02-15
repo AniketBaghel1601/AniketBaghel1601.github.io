@@ -464,12 +464,22 @@ footer .text span a:hover{
   margin-top: 10px;
 }
 
+.contact-card:hover {
+  transform: rotate(3deg);
+  transition: transform 0.30s ease-in-out;
+}
+
+
+
 .contact-links{
   display: flex;
   justify-content: center;
   gap: 5%;
   padding-bottom: 2%;
 }
+
+
+
 
 
 
