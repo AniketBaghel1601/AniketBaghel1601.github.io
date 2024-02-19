@@ -365,7 +365,15 @@ section .button a:hover{
 .project-details p{
   color: #484848;
 }
+.tech-stacks-names{
+  display: flex;
+  gap: 20px;
+  margin-top: 5px;
+}
 
+.tech-stack{
+  margin-left: 90px;
+}
 .topic img {
   max-width: 100%;
   height: auto;
